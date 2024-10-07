@@ -3,7 +3,7 @@ Godot test project: Implementing mobile ads through Google AdMob on a 2D platfor
 Requirements: 
 1) Poing Studios' Godot 4.1 AdMob plugin
    https://godotengine.org/asset-library/asset/2063
-2) Exporting Android correctly configured in Godot
+3) Exporting Android correctly configured in Godot
    https://docs.godotengine.org/en/stable/contributing/development/compiling/compiling_for_android.html
 
 Template: https://godotengine.org/asset-library/asset/1830
