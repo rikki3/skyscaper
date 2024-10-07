@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://gon4imwj2b6f"]
+
+[ext_resource type="Script" path="res://MobileControls/mobile_controls.gd" id="1_nvq4l"]
+[ext_resource type="Texture2D" uid="uid://clv8uk0wjijmt" path="res://MobileControls/Left.png" id="1_qupo6"]
+[ext_resource type="Texture2D" uid="uid://bhap2kvvp0lo8" path="res://MobileControls/Right.png" id="2_1bhtb"]
+[ext_resource type="Texture2D" uid="uid://t5fkhpc01p5k" path="res://MobileControls/Left_Pressed.png" id="3_5liv4"]
+[ext_resource type="Texture2D" uid="uid://c1dbw3npr6mg5" path="res://MobileControls/Jump.png" id="3_t1r48"]
+[ext_resource type="Texture2D" uid="uid://b483ilcab1v5e" path="res://LevelProgress/key.png" id="4_w662c"]
+[ext_resource type="Texture2D" uid="uid://ds6mp2dclwlt7" path="res://MobileControls/Right_Pressed.png" id="5_ufn23"]
+[ext_resource type="Texture2D" uid="uid://jxxw0v2btfbv" path="res://MobileControls/Jump_Pressed.png" id="7_t06yd"]
+
+[node name="MobileControls" type="CanvasLayer"]
+script = ExtResource("1_nvq4l")
+
+[node name="Controls" type="Node2D" parent="."]
+
+[node name="Left" type="TouchScreenButton" parent="Controls"]
+modulate = Color(1, 1, 1, 0.611765)
+position = Vector2(8, 816)
+scale = Vector2(0.7, 0.682)
+texture_normal = ExtResource("1_qupo6")
+texture_pressed = ExtResource("3_5liv4")
+passby_press = true
+action = "ui_left"
+
+[node name="Right" type="TouchScreenButton" parent="Controls"]
+modulate = Color(1, 1, 1, 0.611765)
+position = Vector2(264, 816)
+scale = Vector2(0.7, 0.682)
+texture_normal = ExtResource("2_1bhtb")
+texture_pressed = ExtResource("5_ufn23")
+passby_press = true
+action = "ui_right"
+
+[node name="Jump" type="TouchScreenButton" parent="Controls"]
+modulate = Color(1, 1, 1, 0.611765)
+position = Vector2(1632, 816)
+scale = Vector2(0.7, 0.682)
+texture_normal = ExtResource("3_t1r48")
+texture_pressed = ExtResource("7_t06yd")
+passby_press = true
+action = "jump"
+
+[node name="invKey" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(56, 112)
+rotation = -1.5708
+scale = Vector2(0.115712, 0.177079)
+texture = ExtResource("4_w662c")
